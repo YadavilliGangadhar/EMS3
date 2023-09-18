@@ -1,0 +1,30 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+            class="img-fluid" alt="Phone image">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <h1>Please Login</h1>
+            <form class="example-form" [formGroup]="loginData">
+                <table class="example-full-width" cellspacing="0">
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Username" formControlName="username" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td><mat-form-field class="example-full-width">
+                    <input matInput placeholder="Password" formControlName="password" type="password" name="password" required>
+                  </mat-form-field></td>
+                </tr></table>
+              </form>
+              <button mat-raised-button (click)="login()" color="primary">Login</button>&nbsp;&nbsp;
+              <button mat-raised-button routerLink="/register" color="secondary">Don't Have an Account</button>
+            </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-header>Update Form</mat-card-header>
+  <mat-card-content>
+    <form class="example-form" [formGroup]="updateData" (ngSubmit)="updateUser()">
+      <table>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+              <input matInput formControlName="role_Id" name="role_Id" placeholder="Enter Generated Id" required>
+            </mat-form-field></td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+              <mat-label>Select Role</mat-label>
+              <mat-select formControlName="role">
+                <mat-option *ngFor="let item of rolelist" [value]="item.code">
+                  {{item.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field></td>
+        </tr>
+      </table>
+      <div>
+        <mat-checkbox formControlName="isActive" class="example-margin">Is Active</mat-checkbox>
+      </div>
+      <div>
+        <button type="submit" mat-button color="primary">Update</button>
+        <a mat-dialog-close mat-button color="accent">Close</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="navbar-brand">EMS</a>
+   
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navbar-nav">Your Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-nav" href="emp/privacy">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-nav" href="emp/about">About Us</a>
+        </li>
+      </ul>
+      <p style="color :aquamarine; text-align: center;">Your In Employee Mode</p>
+    </div>
+    <div>
+      <a class="btn btn-danger" (click)="logout()">Logout</a>
+    </div>
+  </nav>
+  <h1 style="text-align: center;">Welcome to Employee Page</h1>
+  <router-outlet/>

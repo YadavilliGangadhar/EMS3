@@ -1,0 +1,91 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                    class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <h1>Update Employee Details</h1>
+                <form class="example-form" [formGroup]="form">
+                    <table class="example-full-width" cellspacing="0">
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput formControlName="name" name="username" [(ngModel)]="getIndividual.name"
+                                        required>
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Email" formControlName="email" type="text" name="email"
+                                    [(ngModel)]="getIndividual.email"
+                                        required>
+                                </mat-form-field></td>
+                        </tr>
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Phone No" formControlName="phone" type="text"
+                                    [(ngModel)]="getIndividual.phone"
+                                        name="phone" required>
+                                </mat-form-field></td>
+
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Project Name" formControlName="project_Name"
+                                    [(ngModel)]="getIndividual.project_Name"
+                                        type="text" name="project_Name" required>
+                                </mat-form-field></td>
+                        </tr>
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Project Status" formControlName="project_Status"
+                                    [(ngModel)]="getIndividual.project_Status"
+                                        type="text" name="project_Status" required>
+                                </mat-form-field></td>
+
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Designation</mat-label>
+                                    <mat-select formControlName="designation" [(ngModel)]="getIndividual.designation">
+                                        <mat-option value="Developer">Developer</mat-option>
+                                        <mat-option value="Tester">Tester</mat-option>
+                                        <mat-option value="Designer">Designer</mat-option>
+                                        <mat-option value="Team Lead">Team Lead</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Manager Name" formControlName="manager_Name"
+                                        type="text" name="manager_Name" [(ngModel)]="getIndividual.manager_Name" required>
+                                </mat-form-field></td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Role</mat-label>
+                                    <mat-select formControlName="role" [(ngModel)]="getIndividual.role">
+                                        <mat-option value="Admin">Admin</mat-option>
+                                        <mat-option value="Manager">Manager</mat-option>
+                                        <mat-option value="Employee">Employee</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Login Id" formControlName="login_Id" type="text"
+                                        name="login_Id" [(ngModel)]="getIndividual.login_Id" readonly>
+                                </mat-form-field></td>
+                            <td><mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Password" formControlName="password" type="password"
+                                        name="password" [(ngModel)]="getIndividual.password" readonly>
+                                </mat-form-field></td>
+                        </tr>
+                    </table>
+                </form>
+                <button mat-raised-button (click)="updateData()" color="primary">Update Employee</button>&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+</section>

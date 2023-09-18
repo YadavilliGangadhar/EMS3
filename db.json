@@ -1,0 +1,64 @@
+
+{
+  "user": [
+    {
+      "role_Id": "a7e55e7b-c3c3-4c1d-8a86-08dba9561328",
+      "id": "gangadhar",
+      "name": "gangadhar y",
+      "password": "1234",
+      "email": "gangadhar@gmail.com",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "role_Id": "56f49daf-a6cc-473f-373f-08dbb5bea697",
+      "id": "raju",
+      "name": "raju y",
+      "password": "1234",
+      "email": "raju@gmail.com",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "role_Id": "60496a28-9732-4d6c-373e-08dbb5bea697",
+      "id": "ramarao",
+      "name": "ramarao",
+      "password": "1234",
+      "email": "ramarao@gmail.com",
+      "role": "manager",
+      "isActive": true
+    },
+    {
+      "role_Id": "7674db8e-99b6-458c-4138-08dbb6f5040e",
+      "id": "apparao",
+      "name": "apparao k",
+      "password": "1234",
+      "email": "apparao@gmail.com",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "role_Id": "0fdf2bea-4ce7-4d1e-413a-08dbb6f5040e\t",
+      "id": "ramcharan",
+      "name": "Ram Charan",
+      "password": "1234",
+      "email": "charan@gmail.com",
+      "role": "staff",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "manager",
+      "name": "Manager"
+    },
+    {
+      "code": "staff",
+      "name": "Employee"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone NO</th>
+          <th scope="col">Project Name</th>
+          <th scope="col">Project Status</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Role</th>
+          <th scope="col">Manager Name</th>
+          <th scope="col">Login Id</th>
+          <th scope="col">Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ getIndividual.name }}</td>
+          <td>{{ getIndividual.email }}</td>
+          <td>{{ getIndividual.phone }}</td>
+          <td>{{ getIndividual.project_Name }}</td>
+          <td>{{ getIndividual.project_Status }}</td>
+          <td>{{ getIndividual.designation }}</td>
+          <td>{{ getIndividual.role }}</td>
+          <td>{{ getIndividual.manager_Name}}</td>
+          <td>{{getIndividual.login_Id}}</td>
+          <td>{{getIndividual.password}}</td>
+        </tr>
+      </tbody>
+    </table>
+  <button class="btn btn-secondary" (click)="Edit()">&nbsp;Edit&nbsp;</button>&nbsp;&nbsp;&nbsp;
+  </div>
+  <router-outlet />
